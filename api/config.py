@@ -1,0 +1,9 @@
+import os
+
+DEBUG = os.getenv("ENVIRONEMENT") == "DEV"
+HOST = os.getenv("APPLICATION_HOST")
+PORT = int(os.getenv("APPLICATION_PORT", "5000"))
+SQLALCHEMY_TRACK_MODIFICATIONS = False
+APPLICATION_ROOT = os.getenv("APPLICATION_APPLICATION_ROOT", "/api")
+DB_URI = os.getenv("DB_URI")
+
