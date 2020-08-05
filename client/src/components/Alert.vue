@@ -1,10 +1,9 @@
 <template>
-  <b-alert variant="info" show>{{ message }}</b-alert>
+  <b-alert :variant="variant" show>{{ message }}</b-alert>
 </template>
-
 
 <script>
 export default {
-	props:["message"]
-}
+  props: ['message', 'variant'],
+};
 </script>
