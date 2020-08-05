@@ -126,7 +126,8 @@
         <b-form-group id="form-words-group" label="Words:" label-for="form-words-input">
           <b-form-textarea
           id="form-words-input"
-          v-model="addCategoryForm.words" placeholder="Enter something..."></b-form-textarea>
+          v-model="addCategoryForm.words"
+          placeholder="Enter comma separated words..."></b-form-textarea>
         </b-form-group>
         <b-button type="submit" variant="primary">Submit</b-button>
       </b-form>
